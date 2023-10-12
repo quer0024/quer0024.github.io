@@ -70,14 +70,15 @@ h3~p{
 }
 /* pseudo classes */
 /* styling the navigation menu */
-nav ul a, 
-nav ul a:link, 
+nav ul a,
+nav ul a:link,
 nav ul a:visited {
     background-color: antiquewhite;
-/*Value Order: horizontal, vertical, blur, spread, and color */
-/* /- = left for horizontal, - = down for vertical */
-    box-shadow: -2px 2px 4px 2px #000; */
+    /* Value Order: horizontal, vertical, blur, spread, and color */
+    /* /- = left for horizontal, - = down for vertical */
+    box-shadow: -2px 2px 4px 2px #000;
 }
+
 /* add class of current to HTML home link after adding hover and focus*/
 nav ul.current
 nav ul a:hover
