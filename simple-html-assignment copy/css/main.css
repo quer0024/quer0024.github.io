@@ -27,3 +27,8 @@ nav ul {
 nav a {
     text-decoration: none;
 }
+nav li {
+    background-color: rgb(234, 191, 234);
+    border: 1px solid black;
+    border-radius: 5px;
+}
