@@ -49,15 +49,15 @@ nav ul a {
 }
 /* combinators */
 /* direct child selector - this will only select direct child of the parent */
-article>p{
+article > p{
     font-size: 24px;
 }
 /* Adjacent sibling selector - this will only select the element that is the very next sibling to the selected parent element, if any exist. */
 h3+ul{
     border: 1px solid black
 }
-/* Sibling selector */
-h3~p{
+/* Sibling selector*/
+h3~ul{
     text-transform: uppercase;
 }
 /* Attribute Selector */
@@ -80,8 +80,8 @@ nav ul a:visited {
 }
 
 /* add class of current to HTML home link after adding hover and focus*/
-nav ul.current
-nav ul a:hover
+nav ul.current,
+nav ul a:hover,
 nav ul a:focus{
     text-decoration: underline;
 }
