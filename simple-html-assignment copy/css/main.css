@@ -5,7 +5,7 @@ body {
 
 header,
 footer {
-    background-color: pink;
+    background-color: rgba(255, 192, 203, 0.626);
 }
 
 .site-title {
@@ -13,5 +13,5 @@ footer {
 }
 
 #maya-monkey {
-    
+    box-shadow: 0px 0px 2px 1px #000000;
 }
