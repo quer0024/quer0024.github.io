@@ -3,19 +3,25 @@ This is a CSS comment.
 The short cut for adding the comment is commands/CTRL + /
 */
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    background-image: url(../images/white_brick_wall.png);
 }
-h1{
+
+h1 {
     color: cadetblue;
 }
-p{
+
+p {
     background-color: antiquewhite;
 }
 
 /* selecting multiple elements */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     text-decoration: underline;
 }
 
@@ -30,44 +36,70 @@ nav ul a {
     color: darkslategray;
     text-decoration: none;
 }
+
 /* Selecting HTML elements with ID value */
 /* Best practice is to avoid using ID for styles. We do this for specificity. IDs overwrite classes we don't want to use them. */
 #treatoftheweek {
-    background-color: cadetblue;
+    /* colour image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg)
+    no-repeat center;
+    /*background size*/
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 16px * 1.25 = 20px */
+    padding: 1em; 
+    /*Padding pushes the element aways from the walls*/
+    width: 50%;
+    /* height: 100%; */
+    /*height is 100% of the browser size and it is dynamic */
 }
+
 /* Selecting HTML elements with class name */
-.blue-link{
+.blue-link {
     background-color: darkslategray;
     color: antiquewhite;
     text-decoration: none;
 }
-.large-text{
+
+.large-text {
     font-size: 24px;
 }
-.white-text{
+
+.white-text {
     color: antiquewhite;
 }
+
 /* combinators */
 /* direct child selector - this will only select direct child of the parent */
-article > p{
+article>p {
     font-size: 24px;
+
+    /*Css typography properties */
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
 }
+
 /* Adjacent sibling selector - this will only select the element that is the very next sibling to the selected parent element, if any exist. */
-h3+ul{
+h3+ul {
     border: 1px solid black
 }
+
 /* Sibling selector*/
-h3~ul{
+h3~ul {
     text-transform: uppercase;
 }
+
 /* Attribute Selector */
 [href="treatoftheweek"] {
     font-weight: bold;
 }
+
 /* money sign = 'ends with' example below = anything that ends with JPG */
-[src$=".jpg"]{
+[src$=".jpg"] {
     border: 4px solid darkslategray
 }
+
 /* pseudo classes */
 /* styling the navigation menu */
 nav ul a,
@@ -82,60 +114,65 @@ nav ul a:visited {
 /* add class of current to HTML home link after adding hover and focus*/
 nav ul.current,
 nav ul a:hover,
-nav ul a:focus{
+nav ul a:focus {
     text-decoration: underline;
 }
 
 nav u a:active {
     box-shadow: 0 0 4px 2px black;
 }
-aside ul li:first-child{
+
+aside ul li:first-child {
     font-weight: bold;
 }
 
-section ol li:last-child{
+section ol li:last-child {
     font-weight: bold;
 }
+
 /* styling a table */
-table{
+table {
     border-collapse: collapse;
 }
 
 /* nth-child selectors - even/odd */
 tbody tr:nth-child(even) {
-    background-color: #d5836c;
+    background-color: #d56c8aab;
 }
+
 /*Using the nth-chiold with n */
 /* where the n is 0, 1, 2, 3, etc until the number of elements ends */
 table th:nth-child(n),
-table td:nth-child(n){
+table td:nth-child(n) {
     border: 1px solid black;
 }
 
 /* Using a formula in nth-child selectors */
 /*1,3,5,7*/
-table td:nth-child(2n+1){
+table td:nth-child(2n+1) {
     background-color: rgba(0, 0, 0, 0.2);
 }
+
 /* css specifity */
 /* formula: inline style, ID, class, tag-name */
 /*              0           0    0       0 */
-footer{
+footer {
     background-color: aqua;
 }
-body footer{
-    background-color: red;
+
+body footer {
+    background-color: rgb(138, 200, 161);
 }
+
 /* because of cascading, whichever input you create LAST or most recently will be the input that takes effect. The more specific input will always take effect */
 /* 0 1 1 */
 footer.site-footer {
     background-color: antiquewhite;
 }
+
 /* 1 0 0 */
-#treatoftheweek{
+#treatoftheweek {
     font-size: 24px;
 }
 
-article p{
-    
-}
+article p {}
