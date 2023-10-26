@@ -10,75 +10,89 @@
 
 <body>
     <div class="container">
-    <header>
-        <h1 id="title">Japan</h1>
-        <img class="header-image" src="images/mountfuji.jpg" alt="Mount Fuji Japan">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="story.html">Story</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article>
-            <section>
-                <h2 class="story-header">Travelling in Japan</h2>
-                <img class="castle-image" src="images/IMG_7842r.jpg" alt="Nijō Castle">
-                <p>Nijo Castle, located in Kyoto, Japan, is a UNESCO World Heritage Site renowned for its historical and
-                    architectural significance. Built in the early 17th century, it is a remarkable example of Momoyama
-                    and Edo period architecture, featuring ornate interiors, beautiful gardens, and impressive stone
-                    walls. One of its most distinctive features is the "nightingale floors" that chirp when walked upon,
-                    serving as a security measure to detect intruders. The castle's elegant design, including its
-                    well-preserved buildings and serene gardens, offers visitors a captivating glimpse into Japan's
-                    feudal past, making it a popular destination for those interested in the country's rich cultural
-                    heritage.</p>
+
+        <!-- HEADER -->
+        <header>
+            <h1 id="title">Japan</h1>
+            <img class="header-image" src="images/mountfuji.jpg" alt="Mount Fuji Japan">
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- Story Paragraph -->
+            <article>
+                <section id="story">
+                    <h2 class="story-header">Nijō Castle in Kyoto</h2>
+                    <img class="castle-image" src="images/IMG_7842r.jpg" alt="Nijō Castle">
+                    <p class="story-text">Nijō Castle, located in Kyoto, Japan, is a UNESCO World Heritage Site renowned for its historical
+                        and
+                        architectural significance. Built in the early 17th century, it is a remarkable example of
+                        Momoyama
+                        and Edo period architecture, featuring ornate interiors, beautiful gardens, and impressive stone
+                        walls. One of its most distinctive features is the "nightingale floors" that chirp when walked
+                        upon,
+                        serving as a security measure to detect intruders. The castle's elegant design, including its
+                        well-preserved buildings and serene gardens, offers visitors a captivating glimpse into Japan's
+                        feudal past, making it a popular destination for those interested in the country's rich cultural
+                        heritage.
+                        Nijō Castle was constructed by Tokugawa Ieyasu, the founder of the
+                        Tokugawa Shogunate, symbolizing the immense power and influence of that era. The "nightingale
+                        floors" not only provided security but also inspired countless poets and writers throughout
+                        history, who saw them as a metaphor for the impermanence of life in the ever-changing world.
+                    </p>
+                </section>
+            </article>
+            <!-- Facts Section -->
+            <section class="facts">
+                <h3 class="facts-header">Facts About Japan</h3>
+                <ul>
+                    <li>It's good manners to slurp your noodles.</li>
+                    <li>Japan trains are some of the most punctual in the world.</li>
+                    <li>Number 4 is unlucky.</li>
+                </ul>
             </section>
-        </article>
-        <section>
+            <!-- Contact Form -->
+            <section>
+                <h3>Contact To Learn More</h3>
+                <form action="contact.html" method="post">
+                    <div>
+                        <label for="fullname">Your Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Jane/John Doe">
+                    </div>
+                    <div>
+                        <label for="youremail">Email</label>
+                        <input type="email" id="youremail" placeholder="Email">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Let us know your thoughts!"></textarea>
+                    </div>
+                    <div>
+                        <h4>Would you like to visit Japan?</h4>
+                        <label for="Yes">Yes</label>
+                        <input type="radio" name="past" id="Yes">
 
-            <h3>Facts About Japan</h3>
-            <ul>
-                <li>It's good manners to slurp your noodles.</li>
-                <li>Japan trains are some of the most punctual in the world.</li>
-                <li>Number 4 is unlucky.</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Contact To Learn More</h3>
-            <form action="contact.html" method="post">
-                <div>
-                    <label for="fullname">Your Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="Jane/John Doe">
-                </div>
-                <div>
-                    <label for="youremail">Email</label>
-                    <input type="email" id="youremail" placeholder="Email">
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" placeholder="Let us know your thoughts!"></textarea>
-                </div>
-                <div>
-                    <h4>Would you like to visit Japan?</h4>
-                    <label for="Yes">Yes</label>
-                    <input type="radio" name="past" id="Yes">
+                        <label for="No">No</label>
+                        <input type="radio" name="past" id="No">
 
-                    <label for="No">No</label>
-                    <input type="radio" name="past" id="No">
-
-                    <label for="Maybe">Maybe</label>
-                    <input type="radio" name="past" id="Maybe">
-                </div>
-                <button type="button">Submit</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        &copy;Japan, 2023
-    </footer>
-</div>
+                        <label for="Maybe">Maybe</label>
+                        <input type="radio" name="past" id="Maybe">
+                    </div>
+                    <button type="button">Submit</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            &copy;Japan, 2023
+        </footer>
+    </div>
 </body>
 
 </html>
