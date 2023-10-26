@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Japan</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+    <div class="container">
     <header>
         <img src="images/mountfuji.jpg" alt="Mount Fuji Japan">
         <h1>Japan</h1>
@@ -25,7 +26,7 @@
             <section>
                 <h2>Travelling in Japan</h2>
                 <img src="images/IMG_7842r.jpg" alt="Nijō Castle">
-                <p>Nijo Castle, located in Kyoto, Japan, is a UNESCO World Heritage Site renowned for   its historical and
+                <p>Nijo Castle, located in Kyoto, Japan, is a UNESCO World Heritage Site renowned for its historical and
                     architectural significance. Built in the early 17th century, it is a remarkable example of Momoyama
                     and Edo period architecture, featuring ornate interiors, beautiful gardens, and impressive stone
                     walls. One of its most distinctive features is the "nightingale floors" that chirp when walked upon,
@@ -37,31 +38,30 @@
         </article>
         <section>
             <h3>Facts About Japan</h3>
-                <ul>
-                    <li>It's good manners to slurp your noddles.</li>
-                    <li>Japan trains are some of the most punctual in the world.</li>
-                    <li>Number 4 is unlucky.</li>
-                </ul>
+            <ul>
+                <li>It's good manners to slurp your noddles.</li>
+                <li>Japan trains are some of the most punctual in the world.</li>
+                <li>Number 4 is unlucky.</li>
+            </ul>
         </section>
         <section>
             <h3>Contact To Learn More</h3>
             <form action="contact.html" method="post">
                 <div>
                     <label for="fullname">Your Name</label>
-                    <input type="text" id="fullname" name="fullname" placeholder="
-                    Jane/John Doe">
+                    <input type="text" id="fullname" name="fullname" placeholder="Jane/John Doe">
                 </div>
                 <div>
                     <label for="youremail">Email</label>
-                    <input type= "email" id="youremail" placeholder="Email"> 
+                    <input type="email" id="youremail" placeholder="Email">
                 </div>
                 <div>
                     <label for="message">Message</label>
-                    <textarea name="message" id="message"></textarea>
+                    <textarea name="message" id="message" placeholder="Let us know your thoughts!"></textarea>
                 </div>
                 <div>
                     <h4>Would you like to visit Japan?</h4>
-                    <label for="yes">Yes</label>
+                    <label for="Yes">Yes</label>
                     <input type="radio" name="past" id="Yes">
 
                     <label for="No">No</label>
@@ -70,11 +70,6 @@
                     <label for="Maybe">Maybe</label>
                     <input type="radio" name="past" id="Maybe">
                 </div>
-                <div>
-                    <h4>Policies</h4>
-                    <input type="checkbox" name="policies" id="policies">
-                    <label for="policies">I agree to the terms and conditions</label>
-                </div>
                 <button type="button">Submit</button>
             </form>
         </section>
@@ -82,6 +77,7 @@
     <footer>
         &copy;Japan, 2023
     </footer>
+</div>
 </body>
 
 </html>
