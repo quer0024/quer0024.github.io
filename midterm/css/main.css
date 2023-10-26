@@ -1,0 +1,42 @@
+/* CSS Comment, add with ctrl + /. */
+
+body {
+    background-color: rgb(51, 49, 47);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    /*create container containing everything inside the body*/
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: rgb(247, 241, 232);
+    margin-bottom: 20px;
+}
+
+img {
+    /*use 100% for images*/
+    width: 100%;
+}
+
+
+/* STYLING NAV MENU */
+nav {
+    text-align: center;
+    position: relative;
+}
+
+nav ul li {
+    display: inline-block;
+    height: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top:0;
+    padding-right: 60px;
+    padding-left: 60px;
+    
+}
