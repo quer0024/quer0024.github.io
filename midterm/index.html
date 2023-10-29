@@ -31,7 +31,8 @@
                 <section id="story">
                     <h2 class="story-header">Nijō Castle in Kyoto</h2>
                     <img class="castle-image" src="images/IMG_7842r.jpg" alt="Nijō Castle">
-                    <p class="story-text">Nijō Castle, located in Kyoto, Japan, is a UNESCO World Heritage Site renowned for its historical
+                    <p class="story-text">Nijō Castle, located in Kyoto, Japan, is a UNESCO World Heritage Site renowned
+                        for its historical
                         and
                         architectural significance. Built in the early 17th century, it is a remarkable example of
                         Momoyama
@@ -51,7 +52,7 @@
             </article>
             <!-- Facts Section -->
             <section class="facts">
-                <h3 class="facts-header">Facts About Japan</h3>
+                <h3 class="section-header">Facts About Japan</h3>
                 <ul>
                     <li>It's good manners to slurp your noodles.</li>
                     <li>Japan trains are some of the most punctual in the world.</li>
@@ -59,38 +60,43 @@
                 </ul>
             </section>
             <!-- Contact Form -->
-            <section>
-                <h3>Contact To Learn More</h3>
-                <form action="contact.html" method="post">
-                    <div>
-                        <label for="fullname">Your Name</label>
-                        <input type="text" id="fullname" name="fullname" placeholder="Jane/John Doe">
-                    </div>
-                    <div>
-                        <label for="youremail">Email</label>
-                        <input type="email" id="youremail" placeholder="Email">
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Let us know your thoughts!"></textarea>
-                    </div>
-                    <div>
-                        <h4>Would you like to visit Japan?</h4>
-                        <label for="Yes">Yes</label>
-                        <input type="radio" name="past" id="Yes">
+            <section id="contact">
+                <h3 class="section-header">Contact To Learn More</h3>
+                <div id="form">
+                    <form action="contact.html" method="post">
+                        <div>
 
-                        <label for="No">No</label>
-                        <input type="radio" name="past" id="No">
+                            <label class="form-label" for="fullname">Your Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Jane/John Doe"> <br>
 
-                        <label for="Maybe">Maybe</label>
-                        <input type="radio" name="past" id="Maybe">
-                    </div>
-                    <button type="button">Submit</button>
-                </form>
+                            <label class="form-label" for="youremail">Email</label>
+                            <input type="email" id="youremail" placeholder="Email"> <br>
+
+                            <label class="form-label" for="message">Message</label>
+                            <textarea name="message" id="message" placeholder="Let us know your thoughts!"></textarea><br>
+
+
+                            <h4 class="visit-heading">Would you like to visit Japan?</h4>
+                            <div class="question">
+                                <label class="radio-label" for="Yes">Yes</label>
+                                <input type="radio" name="question" id="yes">
+
+                                <label class="radio-label" for="No">No</label>
+                                <input type="radio" name="question" id="no">
+
+                                <label class="radio-label" for="Maybe">Maybe</label>
+                                <input type="radio" name="question" id="maybe">
+                            </div>
+                        </div>
+                        <input class="submit-button" name="form" type="submit" value="SUBMIT">
+                    </form>
+                </div>
             </section>
         </main>
         <footer>
-            &copy;Japan, 2023
+            <div class="copyright">
+                &copy;Japan, 2023
+            </div>
         </footer>
     </div>
 </body>
