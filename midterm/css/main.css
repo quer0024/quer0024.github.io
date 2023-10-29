@@ -30,7 +30,6 @@ img {
     position: absolute;
     margin: auto;
     top: 149px;
-    ;
     left: 480px;
     font-size: 80px;
     text-transform: uppercase;
@@ -45,11 +44,12 @@ nav {
 nav ul li {
     display: inline-block;
     height: 30px;
+    font-weight: bold;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: darkslategray;
+    color: rgb(32, 46, 46);
     font-size: 20px;
     text-transform: uppercase;
     margin-top: 0;
@@ -68,6 +68,7 @@ nav ul li a {
     margin-top: 10px;
     font-size: 20px;
     padding-left: 15px;
+    padding-right: 15px;
 }
 
 .story-text {
@@ -95,8 +96,8 @@ nav ul li a {
     padding-left: 10px;
 }
 
-.facts-header {
-    font-size: 25px;
+.section-header {
+    font-size: 20px;
 }
 
 .facts ul {
@@ -110,3 +111,63 @@ nav ul li a {
 }
 
 /* STYLING CONTACT FORM */
+
+#contact {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#form {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+#fullname, #youremail, #message {
+    resize: none;
+    width: 98%;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.visit-heading {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.question {
+    margin-bottom: 8px;
+}
+
+.radio-label {
+    font-size: 12px;
+}
+
+.submit-button {
+    background-color: rgba(216, 177, 184, 0.687);
+    padding: 10px;
+    font-size: 12px;
+    border: 0.2px solid rgba(7, 7, 7, 0.758);
+    font-weight: bold;
+}
+
+.submit-button:hover {
+    background-color: rgba(168, 138, 143, 0.687);
+}
+
+.submit-button:active {
+    background-color: rgba(124, 103, 106, 0.687);
+    color: rgb(255, 255, 255);
+}
+
+/* STYLING COPYRIGHT */
+
+.copyright{
+    padding:30px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+}
