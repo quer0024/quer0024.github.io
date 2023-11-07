@@ -81,6 +81,16 @@ nav ul a {
     width: 50%;
     /* height: 100%; */
     /*height is 100% of the browser size and it is dynamic */
+    position: relative;
+    padding: 1em 1em 4em 1em;
+}
+
+
+/* Position Absolute */
+.blue-link.large-text {
+    position:absolute;
+    bottom: 0;
+    left: 0;
 }
 
 /* Selecting HTML elements with class name */
@@ -121,7 +131,9 @@ section {
 
 .white-text {
     color: antiquewhite;
-}s
+}
+
+s
 
 /* combinators */
 /* direct child selector - this will only select direct child of the parent */
@@ -152,6 +164,15 @@ h3~ul {
 /* money sign = 'ends with' example below = anything that ends with JPG */
 [src$=".jpg"] {
     border: 4px solid darkslategray
+}
+
+/* fixed navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* pseudo classes */
@@ -228,5 +249,3 @@ footer.site-footer {
 #treatoftheweek {
     font-size: 24px;
 }
-
-article p {}
