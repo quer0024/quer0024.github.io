@@ -1,0 +1,103 @@
+/*****CUSTOM STYLES*****/
+
+/* Global Styles */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    background-color: #c78b07;
+    color: #222222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0em 0em 0.5em;
+}
+
+/* To ensure that font sizes are proportionate to each other and not random values: www.modularscale.com */
+
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+/* Navigation Styles */
+
+nav {
+    background-color: #222222;
+}
+
+nav ul li {
+    color: #c78b07;
+    text-align: center;
+    padding: 1em;
+}
+
+.logo {
+    background-color: #c78b07;
+}
+
+.search {
+    color: #5c5b5b;
+    background-color: white;
+    text-align: left;
+}
+
+/* Welcome Styles */
+
+.banner {
+    width: 100%;
+}
+
+.welcome {
+    background-color: #222222a9;
+}
+
+.welcome p,
+h1 {
+    color: white;
+}
+
+/********DESKTOP STYLES************/
