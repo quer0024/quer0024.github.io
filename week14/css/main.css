@@ -1,0 +1,6 @@
+.max-mar {
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* One media query min-width 760px, no max-width*/
