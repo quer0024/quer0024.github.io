@@ -1,0 +1,33 @@
+/* 
+font-family: 'Pacifico', cursive;
+font-family: 'Poppins', sans-serif;
+ */
+
+ body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(117, 153, 116);
+}
+
+header, main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color:  rgb(220, 205, 236);
+}
+
+h1, h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+.fa-gear {
+    font-size: 6rem;
+    color: rgb(255, 150, 188);
+}
+
+.map iframe {
+    width: 100%;
+    max-width: 800px;
+/* How to center below */
+    margin: 0 auto;
+    display: block;
+}
+
