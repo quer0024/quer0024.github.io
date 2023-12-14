@@ -5,6 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three Star Media</title>
+
+    <!-- Font Link Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Bold Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <!-- CSS Links -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 
@@ -15,12 +26,9 @@
 
 <body>
     <header>
-        <div>
-            <img src="images/logo.png" alt="Three Star Media Logo">
-        </div>
-
         <!-- Navigation -->
-        <nav class="home">
+        <nav id="home" class="nav">
+            <img src="images/logo.png" alt="Three Star Media Logo">
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
@@ -28,7 +36,7 @@
                 <li><a href="#team">Team</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <form action="search">
+                    <form action="search" class="search">
                         <div>
                             <input type="search" class="search" placeholder="Search">
                             <button type="submit">
@@ -40,9 +48,9 @@
             </ul>
         </nav>
 
-        <div>
-            <img src="images/main-banner.jpg" alt="Main Banner" class="banner">
-            <div class="welcome">
+        <div class="banner">
+            <!-- This is a background image - CSS -->
+            <div class="wrapper welcome">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                     labore et
@@ -81,99 +89,120 @@
         </section>
 
         <!-- Our Services Cards -->
-        <section id="services" class="wrapper cards">
-            <h2>Our Services</h2>
-            <div>
-                <section class="card">
-                    <img src="images/digital.jpg" alt="Digital Transformation">
-                    <div class="top left">
-                        <h3>Digital Transformation</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button>Digital Plans<i class="fa-solid fa-play"></i></button>
-                    </div>
-                </section>
+        <section id="services">
+            <div class="wrapper cards">
+                <h2>Our Services</h2>
+                <div>
+                    <section class="card">
+                        <img src="images/digital.jpg" alt="Digital Transformation">
+                        <div class="top left">
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <button>Digital Plans<i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </section>
 
-                <section class="card">
-                    <img src="images/marketing.jpg" alt="Marketing">
-                    <div class="top right">
-                        <h3>Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button>Marketing Plans<i class="fa-solid fa-play"></i></button>
-                    </div>
-                </section>
+                    <section class="card">
+                        <img src="images/marketing.jpg" alt="Marketing">
+                        <div class="top right">
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <button>Marketing Plans<i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </section>
 
-                <section class="card">
-                    <img src="images/video.jpg" alt="Video Production">
-                    <div class="bottom left">
-                        <h3>Video Production</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button>Video Plans<i class="fa-solid fa-play"></i></button>
-                    </div>
-                </section>
+                    <section class="card">
+                        <img src="images/video.jpg" alt="Video Production">
+                        <div class="bottom left">
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <button>Video Plans<i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </section>
 
-                <section class="card">
-                    <img src="images/web.jpg" alt="Web Development">
-                    <div class="bottom middle">
-                        <h3>Web Development</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button>Video Plans<i class="fa-solid fa-play"></i></button>
-                    </div>
-                </section>
+                    <section class="card">
+                        <img src="images/web.jpg" alt="Web Development">
+                        <div class="bottom middle">
+                            <h3>Web Development</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <button>Video Plans<i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </section>
 
-                <section class="card">
-                    <img src="images/print.jpg" alt="Print ">
-                    <div class="bottom right">
-                        <h3>Print</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                            laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button>Print Plans<i class="fa-solid fa-play"></i></button>
-                    </div>
-                </section>
-
+                    <section class="card">
+                        <img src="images/print.jpg" alt="Print ">
+                        <div class="bottom right">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <button class="card-btn">Print Plans<i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </section>
+                </div>
             </div>
         </section>
 
         <!-- Our Vision -->
         <section id="vision" class="wrapper vision">
-            <img src="images/vision.jpg" alt="Our Vision">
-            <h3>Our Vision</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
-            <button>Learn More</button>
+            <!-- This will be background image -->
+            <div>
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip
+                    ex ea commodo consequat.</p>
+                <button class="btn">Learn More</i</button>
+            </div>
         </section>
 
         <!-- Our Team -->
-        <div id="team" class="wrapper team">
+        <div id="team" class="wrapper teams">
             <h2>Our Team</h2>
+            <div class="team john">
             <div>
                 <img src="images/john.jpg" alt="John Doe">
             </div>
             <div>
                 <h3>John Doe</h3>
                 <h4>CEO and Co-owner</h4>
+                <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.</p>
             </div>
+            </div>
+            <div class="team bob">
             <div>
                 <img src="images/bob.jpg" alt="Bob Rite">
             </div>
             <div>
                 <h3>Bob Rite</h3>
                 <h4>CFO and Co-owner</h4>
+                <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat.</p>
+            </div>
             </div>
         </div>
 
@@ -182,7 +211,7 @@
             <h2>Contact Us</h2>
             <div class="message">
                 <h3>Send us a message</h3>
-                <form action="what.hmtl" method="post">
+                <form action="what.hmtl" method="post" class="form">
                     <div>
                         <label for="fullname">Full Name</label>
                         <input type="text" id="fullname" name="fullname">
