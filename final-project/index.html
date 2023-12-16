@@ -27,50 +27,53 @@
 <body>
     <header>
         <!-- Navigation -->
-        <nav id="home" class="nav">
-            <img src="images/logo.png" alt="Three Star Media Logo">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <form action="search" class="search">
-                        <div>
-                            <input type="search" class="search" placeholder="Search">
-                            <button type="submit">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </div>
-                    </form>
-                </li>
-            </ul>
-        </nav>
+
+        <div class="nav container">
+            <nav id="home">
+                <div class="logo-wrapper">
+                    <img class="logo" src="images/logo.png" alt="Three Star Media Logo">
+                </div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <form action="search" class="search">
+                    <input name="search" type="search" class="search-input" placeholder="Search">
+                    <button class="search-btn" type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </nav>
+        </div>
 
         <div class="banner">
             <!-- This is a background image - CSS -->
-            <div class="wrapper welcome">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat.</p>
-                <button>Connect with us<i class="fa-solid fa-play"></i></button>
+            <div class="welcome container">
+                <div class="wrapper">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
+                        ex ea commodo consequat.</p>
+                    <button class="connect-btn">Connect with us<i class="fa-solid fa-play"></i></button>
+                </div>
             </div>
         </div>
     </header>
 
 
-    <main class="container">
+    <main>
         <!-- About Us -->
-        <section>
-            <div id="about" class="wrapper about">
-                <div>
-                    <img src="images/about-us.jpg" alt="About Us">
+        <section id="about" class="about box">
+            <div class="container">
+                <div class="abt-img-wrapper">
+                    <img class="abt-img" src="images/about-us.jpg" alt="About Us">
                 </div>
-                <div>
+                <div class="abt-text">
                     <h2>About Us</h2>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore
@@ -89,178 +92,181 @@
         </section>
 
         <!-- Our Services Cards -->
-        <section id="services">
+        <section id="services" class="container">
             <div class="wrapper cards">
-                <h2>Our Services</h2>
-                <div>
-                    <section class="card">
-                        <img src="images/digital.jpg" alt="Digital Transformation">
-                        <div class="top left">
-                            <h3>Digital Transformation</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button>Digital Plans<i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </section>
 
-                    <section class="card">
-                        <img src="images/marketing.jpg" alt="Marketing">
-                        <div class="top right">
-                            <h3>Marketing</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button>Marketing Plans<i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </section>
+                <h2 class="hdr">Our Services</h2>
 
-                    <section class="card">
-                        <img src="images/video.jpg" alt="Video Production">
-                        <div class="bottom left">
-                            <h3>Video Production</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button>Video Plans<i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </section>
+                <section class="card dgt">
+                    <img class="card-img" src="images/digital.jpg" alt="Digital Transformation">
+                    <div class="card-content digital">
+                        <h3>Digital Transformation</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-btn">Digital Plans<i class="fa-solid fa-play"></i></button>
+                    </div>
+                </section>
 
-                    <section class="card">
-                        <img src="images/web.jpg" alt="Web Development">
-                        <div class="bottom middle">
-                            <h3>Web Development</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button>Video Plans<i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </section>
+                <section class="card mrkt">
+                    <img class="card-img" src="images/marketing.jpg" alt="Marketing">
+                    <div class="card-content marketing">
+                        <h3>Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-btn">Marketing Plans<i class="fa-solid fa-play"></i></button>
+                    </div>
+                </section>
 
-                    <section class="card">
-                        <img src="images/print.jpg" alt="Print ">
-                        <div class="bottom right">
-                            <h3>Print</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                                ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                                ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            <button class="card-btn">Print Plans<i class="fa-solid fa-play"></i></button>
-                        </div>
-                    </section>
-                </div>
+                <section class="card vid">
+                    <img class="card-img" src="images/video.jpg" alt="Video Production">
+                    <div class="card-content video">
+                        <h3>Video Production</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-btn">Video Plans<i class="fa-solid fa-play"></i></button>
+                    </div>
+                </section>
+
+                <section class="card web">
+                    <img class="card-img" src="images/web.jpg" alt="Web Development">
+                    <div class="card-content web">
+                        <h3>Web Development</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-btn">Web Plans<i class="fa-solid fa-play"></i></button>
+                    </div>
+                </section>
+
+                <section class="card prt">
+                    <img class="card-img" src="images/print.jpg" alt="Print ">
+                    <div class="card-content print">
+                        <h3>Print</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                    <div class="card-actions">
+                        <button class="card-btn">Print Plans<i class="fa-solid fa-play"></i></button>
+                    </div>
+                </section>
             </div>
         </section>
 
         <!-- Our Vision -->
-        <section id="vision" class="wrapper vision">
+        <section id="vision" class="vision">
             <!-- This will be background image -->
-            <div>
+            <div class="container">
                 <h3>Our Vision</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip
-                    ex ea commodo consequat.</p>
-                <button class="btn">Learn More</i</button>
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+                <button class="vision-btn">Learn More<i class="fa-solid fa-play"></i></button>
             </div>
         </section>
 
         <!-- Our Team -->
-        <div id="team" class="wrapper teams">
+        <section id="team" class="container">
             <h2>Our Team</h2>
-            <div class="team john">
-            <div>
-                <img src="images/john.jpg" alt="John Doe">
+            <div class="team">
+                <div class="team-mbr john">
+                    <img class="team-img" src="images/john.jpg" alt="John Doe">
+                    <div class="box">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
+
+                <div class="team-mbr bob">
+                    <img class="team-img" src="images/bob.jpg" alt="Bob Rite">
+                    <div class="box">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore
+                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut
+                            aliquip ex ea commodo consequat.</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>John Doe</h3>
-                <h4>CEO and Co-owner</h4>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-            </div>
-            </div>
-            <div class="team bob">
-            <div>
-                <img src="images/bob.jpg" alt="Bob Rite">
-            </div>
-            <div>
-                <h3>Bob Rite</h3>
-                <h4>CFO and Co-owner</h4>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat.</p>
-            </div>
-            </div>
-        </div>
+        </section>
 
         <!-- Contact Us Form -->
-        <div id="contact" class=" wrapper contact">
+        <section id="contact" class="contact-us container">
             <h2>Contact Us</h2>
+
             <div class="message">
                 <h3>Send us a message</h3>
-                <form action="what.hmtl" method="post" class="form">
+                <form action="what.html" method="post" class="form">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname">
+                    <label for="email">Email</label>
+                    <input autocomplete="email" type="text" id="email" name="email">
+                    <label for="message">Message</label>
+                    <textarea class="message-body" type="text" id="message" name="message"></textarea>
                     <div>
-                        <label for="fullname">Full Name</label>
-                        <input type="text" id="fullname" name="fullname">
+                        <button class="contact-btn" type="button">Send</button>
                     </div>
-                    <div>
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email">
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <input type="text" id="message" name="message">
-                    </div>
-                    <button type="button">Send</button>
                 </form>
             </div>
-        </div>
 
-        <!-- Hours of Operation Table -->
-        <div class="hours">
-            <h3>Hours of operation</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Hours</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>9 AM - 6 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday - Sunday</td>
-                        <td>Closed</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <!-- Hours of Operation Table -->
+            <div class="hours">
+                <h3>Hours of operation</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday - Friday</td>
+                            <td>9 AM - 6 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday - Sunday</td>
+                            <td>Closed</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-        <!-- Location -->
-        <div class="location">
-            <h3>Location</h3>
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251141!2d-75.82702347832033!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701196923551!5m2!1sen!2sca"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
+            <!-- Location -->
+            <div class="location">
+                <h3>Location</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44863.11128251141!2d-75.82702347832033!3d45.34993349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1701196923551!5m2!1sen!2sca"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
